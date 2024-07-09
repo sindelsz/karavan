@@ -1,0 +1,12 @@
+- route:
+    id: route-ff2d
+    nodePrefixId: route-ccf
+    from:
+      id: from-b2b5
+      uri: kamelet:timer-source
+      parameters:
+        message: Hello
+      steps:
+        - log:
+            id: log-258c
+            message: ${body} world!
